@@ -20,7 +20,7 @@
 
     <checkstyle.xml>${basedir}/checkstyle.xml</checkstyle.xml>
     <checkstyle.parentXml>example-parent/checkstyle.xml</checkstyle.parentXml>
-    <site.deployUrl>file:///tmp/example-site</site.deployUrl>
+    <site.deployUrl>scm:git:git@github.com:isvilen/mvn-example.git</site.deployUrl>
   </properties>
 
   <distributionManagement>
@@ -104,6 +104,13 @@
         </configuration>
         <inherited>false</inherited>
       </plugin>
+
+      <plugin>
+        <artifactId>maven-scm-publish-plugin</artifactId>
+        <configuration>
+          <scmBranch>gh-pages</scmBranch>
+        </configuration>
+      </plugin>
     </plugins>
 
     <pluginManagement>
@@ -169,6 +176,12 @@
         <plugin>
           <artifactId>maven-checkstyle-plugin</artifactId>
           <version>2.12.1</version>
+        </plugin>
+
+        <plugin>
+          <artifactId>maven-scm-publish-plugin</artifactId>
+          <version>1.0</version>
+          <extensions>true</extensions>
         </plugin>
       </plugins>
 
