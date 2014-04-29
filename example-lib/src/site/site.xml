@@ -1,0 +1,9 @@
+<project>
+  <custom>
+    <reflowSkin>
+      <brand>
+        <name>${project.name}</name>
+      </brand>
+    </reflowSkin>
+  </custom>
+</project>
