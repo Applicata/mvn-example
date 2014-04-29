@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>example - Checkstyle report</title>
-    <link>http://www.example.com/mvn-example/example</link>
+    <link>http://isvilen.github.io/mvn-example/example/</link>
     <description>example - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2014</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>http://www.example.com/mvn-example/example/checkstyle.html</link>
+            <link>http://isvilen.github.io/mvn-example/example//checkstyle.html</link>
       <description>
-        <p>Click <a href="http://www.example.com/mvn-example/example/checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="http://isvilen.github.io/mvn-example/example//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="http://www.example.com/mvn-example/example/checkstyle.html#example.app.SampleApp.java">example/app/SampleApp.java</a>
+                  <a href="http://isvilen.github.io/mvn-example/example//checkstyle.html#example.app.SampleApp.java">example/app/SampleApp.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://www.example.com/mvn-example/example/checkstyle.html#example.lib.Sample.java">example/lib/Sample.java</a>
+                  <a href="http://isvilen.github.io/mvn-example/example//checkstyle.html#example.lib.Sample.java">example/lib/Sample.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://www.example.com/mvn-example/example/checkstyle.html#example.app.SampleAppTest.java">example/app/SampleAppTest.java</a>
+                  <a href="http://isvilen.github.io/mvn-example/example//checkstyle.html#example.app.SampleAppTest.java">example/app/SampleAppTest.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://www.example.com/mvn-example/example/checkstyle.html#example.app.SampleAppITCase.java">example/app/SampleAppITCase.java</a>
+                  <a href="http://isvilen.github.io/mvn-example/example//checkstyle.html#example.app.SampleAppITCase.java">example/app/SampleAppITCase.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://www.example.com/mvn-example/example/checkstyle.html#example.lib.SampleTest.java">example/lib/SampleTest.java</a>
+                  <a href="http://isvilen.github.io/mvn-example/example//checkstyle.html#example.lib.SampleTest.java">example/lib/SampleTest.java</a>
                 </td>
                 <td>
                   0
