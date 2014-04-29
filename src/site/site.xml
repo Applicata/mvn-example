@@ -1,0 +1,23 @@
+<project>
+
+  <custom>
+    <reflowSkin>
+      <slogan>Example Project.</slogan>
+      <bottomDescription>
+        This is an example for multi-module maven project setup.
+      </bottomDescription>
+
+      <topNav>modules|reports</topNav>
+      <bottomNav>
+        <column>modules</column>
+        <column>reports</column>
+      </bottomNav>
+
+    </reflowSkin>
+  </custom>
+
+  <bannerLeft>
+    <name>Example muti-module project</name>
+  </bannerLeft>
+
+</project>
