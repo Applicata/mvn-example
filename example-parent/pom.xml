@@ -11,7 +11,7 @@
 
   <packaging>pom</packaging>
 
-  <url>http://www.example.com/mvn-example</url>
+  <url>http://isvilen.github.io/mvn-example/</url>
   <name>example</name>
 
   <properties>
