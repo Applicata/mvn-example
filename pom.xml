@@ -17,6 +17,10 @@
 
   <packaging>pom</packaging>
 
+  <properties>
+    <checkstyle.xml>${basedir}/${checkstyle.parentXml}</checkstyle.xml>
+  </properties>
+
   <modules>
     <module>example-lib</module>
     <module>example-app</module>
@@ -57,6 +61,18 @@
           <reportSet>
             <reports>
               <report>report-only</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <reportSets>
+          <reportSet>
+            <id>aggregate</id>
+            <reports>
+              <report>checkstyle-aggregate</report>
             </reports>
           </reportSet>
         </reportSets>

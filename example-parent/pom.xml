@@ -18,6 +18,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+    <checkstyle.xml>${basedir}/checkstyle.xml</checkstyle.xml>
+    <checkstyle.parentXml>example-parent/checkstyle.xml</checkstyle.parentXml>
     <site.deployUrl>file:///tmp/example-site</site.deployUrl>
   </properties>
 
@@ -164,6 +166,10 @@
           <version>0.7.0.201403182114</version>
         </plugin>
 
+        <plugin>
+          <artifactId>maven-checkstyle-plugin</artifactId>
+          <version>2.12.1</version>
+        </plugin>
       </plugins>
 
     </pluginManagement>
@@ -221,8 +227,36 @@
         <artifactId>jacoco-maven-plugin</artifactId>
       </plugin>
 
+      <plugin>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <configuration>
+          <includeTestSourceDirectory>true</includeTestSourceDirectory>
+          <configLocation>${checkstyle.xml}</configLocation>
+        </configuration>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>checkstyle</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
     </plugins>
   </reporting>
+
+  <profiles>
+    <profile>
+      <id>checkstyle-in-module</id>
+      <activation>
+	<file>
+	  <exists>${basedir}/../${checkstyle.parentXml}</exists>
+	</file>
+      </activation>
+      <properties>
+	<checkstyle.xml>${basedir}/../${checkstyle.parentXml}</checkstyle.xml>
+      </properties>
+    </profile>
+  </profiles>
 
   <dependencies>
     <dependency>
