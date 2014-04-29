@@ -22,4 +22,12 @@
     <module>example-app</module>
   </modules>
 
+  <distributionManagement>
+    <site>
+      <id>example-site</id>
+      <name>Example Project Site</name>
+      <url>${site.deployUrl}</url>
+    </site>
+  </distributionManagement>
+
 </project>

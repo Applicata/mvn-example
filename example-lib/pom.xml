@@ -15,4 +15,6 @@
   <groupId>maven-example</groupId>
   <artifactId>example-lib</artifactId>
 
+  <name>example-lib</name>
+
 </project>

@@ -11,10 +11,34 @@
 
   <packaging>pom</packaging>
 
+  <url>http://www.example.com/mvn-example</url>
+  <name>example</name>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+    <site.deployUrl>file:///tmp/example-site</site.deployUrl>
   </properties>
+
+  <distributionManagement>
+    <site>
+      <id>example-site</id>
+      <url>${site.deployUrl}</url>
+    </site>
+  </distributionManagement>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-site-plugin</artifactId>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+        <inherited>false</inherited>
+      </plugin>
+    </plugins>
+  </build>
 
   <dependencies>
     <dependency>
