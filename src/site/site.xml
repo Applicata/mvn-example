@@ -2,6 +2,9 @@
 
   <custom>
     <reflowSkin>
+      <brand>
+        <name>${project.name}</name>
+      </brand>
       <slogan>Example Project.</slogan>
       <bottomDescription>
         This is an example for multi-module maven project setup.
@@ -12,6 +15,13 @@
         <column>modules</column>
         <column>reports</column>
       </bottomNav>
+
+      <pages>
+        <index>
+          <shortTitle>Welcome</shortTitle>
+          <toc>false</toc>
+        </index>
+      </pages>
 
     </reflowSkin>
   </custom>
