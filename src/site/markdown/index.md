@@ -10,12 +10,12 @@ mvn generated site.
 * Coding style conventions compliance [maven-checkstyle][5]
 * Tests code coverage [jacoco-maven][6]
 
-[1] : http://maven.apache.org/plugins/maven-javadoc-plugin/
-[2] : http://maven.apache.org/plugins/maven-jxr-plugin/
-[3] : http://maven.apache.org/surefire/maven-surefire-plugin/
-[4] : http://maven.apache.org/surefire/maven-failsafe-plugin/
-[5] : http://maven.apache.org/plugins/maven-checkstyle-plugin/
-[6] : http://www.eclemma.org/jacoco/trunk/doc/maven.html
+[1]: http://maven.apache.org/plugins/maven-javadoc-plugin/
+[2]: http://maven.apache.org/plugins/maven-jxr-plugin/
+[3]: http://maven.apache.org/surefire/maven-surefire-plugin/
+[4]: http://maven.apache.org/surefire/maven-failsafe-plugin/
+[5]: http://maven.apache.org/plugins/maven-checkstyle-plugin/
+[6]: http://www.eclemma.org/jacoco/trunk/doc/maven.html
 
 ## Known bugs and limitations
 * Tests coverage reports are not aggregated
